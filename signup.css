@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #1C1C1C, #2A2A2A, #1C1C1C, #FF4C8B);
+    background-size: 400% 400%;
+    animation: backgroundAnimation 10s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.display-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#animation {
+    height: 18vh;
+    width: 18vh;
+    border: 3px solid #FF4C8B;
+    background-color: #1C1C1C; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: input-animations 1.5s ease-in-out forwards;
+}
+
+#animation i {
+    color: #FF4C8B; 
+    font-size: 8vh; 
+}
+
+
+#signup-heading {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: #F5F5F5;
+    animation: input-animations 1.5s ease-in-out forwards;
+}
+
+.root-container {
+    height: 100vh;
+    width: 37vw;
+    border-radius: 1em;
+    background-color: #2A2A2A; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.root-container:hover {
+    border: 3px solid #FF4C8B; 
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.headings {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #F5F5F5; 
+    animation: input-animations 1.5s ease-in-out forwards;
+}
+
+.inputs {
+    margin: 0.6rem;
+    width: 30vw;
+    height: 4vh;
+    border-radius: 5px;
+    font-family: sans-serif;
+    background-color: #3A3A3A; 
+    color: #F5F5F5; 
+    border: 2px solid #4A4A4A; 
+    animation: input-animations 1.5s ease-in-out forwards;
+}
+
+.inputs:hover {
+    border: 3px solid #FF4C8B; 
+    width: 32vw;
+}
+
+.headings:hover {
+    font-size: 1.3rem;
+}
+
+#submit-button {
+    height: 4vh;
+    width: 8vw;
+    text-align: center;
+    background-color: #FF4C8B;
+    color: #1C1C1C; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Courier;
+    font-weight: 500;
+    animation: input-animations 1.5s ease-in-out forwards;
+    margin-top: 1rem; 
+}
+
+#submit-button:hover {
+    background-color: #FF739C; 
+}
+
+@keyframes input-animations {
+    0% {
+        transform: scale(0, 0);
+    }
+    50% {
+        transform: scale(1.5, 1.0667);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}

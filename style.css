@@ -1,0 +1,122 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #1C1C1C, #2A2A2A, #1C1C1C, #FF4C8B);
+    background-size: 400% 400%;
+    animation: backgroundAnimation 10s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.root-container {
+    height: 50vh;
+    width: 40vw;
+    border-radius: 1em;
+    background-color: #2A2A2A; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.root-container:hover {
+    border: 3px solid #FF4C8B; 
+}
+
+
+.display-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+#animation {
+    height: 15vh;
+    width: 15vh;
+    border: 3px solid #FF4C8B; 
+    background-color: #1C1C1C; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: input-animations 1.5s ease-in-out forwards;
+}
+
+#animation i {
+    color: #FF4C8B; 
+    font-size: 6vh; 
+}
+
+
+#welcome-heading {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: #F5F5F5; 
+    animation: input-animations 1.5s ease-in-out forwards;
+}
+
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option-button {
+    margin: 0.6rem;
+    width: 30vw;
+    height: 4vh;
+    border-radius: 5px;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #FF4C8B;
+    color: #1C1C1C;
+    text-decoration: none;
+    line-height: 4vh; 
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    animation: input-animations 1.5s ease-in-out forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-button:hover, #signup-button:hover {
+    background-color: #FF739C; 
+}
+
+
+@keyframes input-animations {
+    0% {
+        transform: scale(0, 0);
+    }
+    50% {
+        transform: scale(1.5, 1.0667);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
